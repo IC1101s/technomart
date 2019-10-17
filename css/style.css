@@ -411,7 +411,7 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: 14px 14px;
 
-	transition-property: color, background-image, opacity;
+	transition-property: color, background-image;
 	transition-duration: 0.05s;
 	transition-timing-function: linear;
 }
@@ -434,6 +434,10 @@ input[type="radio"].visually-hidden {
 .header-btn-login:active span {
 	color: #000000;
 	opacity: 0.3;
+
+	transition-property: opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
 }
 
 .header-btn-registration {
@@ -447,7 +451,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 	background-color: #ffffff;
 
-	transition-property: color, background-image, opacity;
+	transition-property: color, background-image;
 	transition-duration: 0.05s;
 	transition-timing-function: linear;
 }
@@ -460,4 +464,59 @@ input[type="radio"].visually-hidden {
 .header-btn-registration:active span {
 	color: #000000;
 	opacity: 0.3;
+
+	transition-property: opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+}
+
+/* ========== header-bottom-flex ========== */
+
+.header-bottom-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin: 0;
+	padding: 0;
+	padding-bottom: 60px;
+
+	list-style: none;
+}
+
+.header-bottom-flex a {
+	display: inline-block;
+	padding: 19px 33.7px 19px;
+
+	border-bottom: 5px solid #293449;
+
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 400;
+
+	color: #ffffff;
+	background-color: #32425c;
+
+	transition-property: color, background-color;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+
+.header-bottom-flex a:hover,
+.header-bottom-flex a:focus {
+	background-color: #293449;
+}
+
+.header-bottom-flex a:active {
+	background-color: #1d2739;
+	border-bottom: 5px solid #1d2739;
+}
+
+.header-bottom-flex a:active span {
+	color: #ffffff;
+	opacity: 0.5;
+
+	transition-property: opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
 }
