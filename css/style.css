@@ -61,6 +61,7 @@ input[type="radio"].visually-hidden {
 
 .header-top-background {
 	width: 100%;
+	margin-bottom: 46px;
 
 	background-color: #293449;	
 }
@@ -320,4 +321,143 @@ input[type="radio"].visually-hidden {
 
 .header-btn a:active span {
 	opacity: 0.51;
+}
+
+/* ========== header-center-flex ========== */
+
+.header-center-flex {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	margin-bottom: 40px;
+}
+
+/* header-description */
+
+.header-description {
+	margin: 0;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 700;
+	font-style: italic;
+
+	color: #ee3643;
+}
+
+/* header-contacts */
+
+.header-contacts {
+	text-align: center;
+	margin-left: 69px;
+}
+
+.header-phone {
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 8px 42px 8px 69px;
+	
+	font-family: "Cuprum", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400;
+
+	color: #ee3643;
+	background-color: #f4f7f9;
+
+	border: 3px solid #ffffff;
+
+	background-image: url("../img/header/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 13px 10px;
+}
+
+.header-adress {
+	margin: 0;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #32425c;
+}
+
+/* header-input */
+
+.header-input {
+	margin: 0;
+	margin-left: 69px;
+}
+
+.header-input .header-btn-registration {
+	margin-left: 6px;
+}
+
+.header-btn-login {
+	padding: 11px 25px 11px 48px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400;
+
+	color: #000000;
+	background-color: #ffffff;
+
+	background-image: url("../img/header/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 14px 14px;
+
+	transition-property: color, background-image, opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+}
+
+.header-btn-login:hover,
+.header-btn-login:focus {
+	color: #ee3643;
+
+	background-image: url("../img/header/icon-login-hover.svg");
+	background-repeat: no-repeat;
+	background-position: 14px 14px;
+}
+
+.header-btn-login:active {
+	background-image: url("../img/header/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 14px 14px;
+}
+
+.header-btn-login:active span {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.header-btn-registration {
+	padding: 11px 24px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400;
+
+	color: #000000;
+	background-color: #ffffff;
+
+	transition-property: color, background-image, opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+}
+
+.header-btn-registration:hover,
+.header-btn-registration:focus {
+	color: #ee3643;
+}
+
+.header-btn-registration:active span {
+	color: #000000;
+	opacity: 0.3;
 }
