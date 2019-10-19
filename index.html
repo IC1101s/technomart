@@ -50,9 +50,9 @@
 					<p class="header-phone">
 						+7 (812) 555-05-55
 					</p>
-					<p class="header-adress">
+					<address class="header-adress">
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					</p>
+					</address>
 				</div>
 				<p class="header-input">
 					<a class="header-btn-login" href="#"><span>Войти</span></a>
@@ -63,16 +63,90 @@
 
 		<div class="container">
 			<ul class="header-bottom-flex">
-				<li><a href="index.html"><span>Главная</span></a></li>
-				<li><a href="#"><span>Компания</span></a></li>
-				<li><a href="#"><span>Каталог</span></a></li>
-				<li><a href="#"><span>Новости</span></a></li>
-				<li><a href="#"><span>Спецпредложения</span></a></li>
-				<li><a href="#"><span>Доставка</span></a></li>
-				<li><a href="#"><span>Контакты</span></a></li>
+				<li>
+					<a href="index.html"><span>Главная</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Компания</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Каталог</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Новости</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Спецпредложения</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Доставка</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Контакты</span></a>
+				</li>
 			</ul>
 		</div>
 	</header>
+
+	<main class="container">
+		<h1 class="visually-hidden">"Техномарт"</h1>
+
+		<!-- Goods-1 -->
+		<section class="goods-1">
+			<h2 class="visually-hidden">Товары</h2>
+
+			<ul class="goods-inner">
+				<li class="goods-item item-1">
+					<h2>Материалы</h2>
+					<a class="goods-btn" href="#"><span>На любой вкус</span></a>
+				</li>
+				<li class="goods-item item-2">
+					<h2>Инструмент</h2>
+					<a class="goods-btn" href="#"><span>На все случаи</span></a>
+				</li>
+				<li class="goods-item item-3">
+					<h2>Техника</h2>
+					<a class="goods-btn" href="#"><span>Для стройки</span></a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Sliders-and-Goods -->
+		<section class="sliders-and-goods">
+			<h2 class="visually-hidden">Слайдеры, скидки, доставка</h2>
+
+			<input type="radio" name="toggle" id="btn-1">
+			<input type="radio" name="toggle" id="btn-2" checked>
+			<div class="sliders-controls">
+				<label for="btn-1"></label>
+				<label for="btn-2"></label>
+			</div>
+			<ul class="sliders">
+				<li class="slider-item">
+					<img src="img/sliders/slider-1.jpg" alt="Слайдер - Дрели" width="620" height="266">
+					<h3>Перфораторы</h3>
+					<p>Настоящие мужские игрушки</p>
+					<a class="sleder-btn" href="#">Открыть каталог</a>
+				</li>
+				<li class="slider-item">
+					<img src="img/sliders/slider-2.jpg" alt="Слайдер - Перфораторы" width="620" height="266">
+					<h3>Дрели</h3>
+					<p>Соседям на радость!</p>
+					<a class="sleder-btn" href="#">Открыть каталог</a>
+				</li>
+			</ul>
+			<ul class="goods-2">
+				<li class="goods-item-2 item-4">
+					<h2>Скидки 50%</h2>
+					<a class="goods-btn" href="#"><span>На 350 товаров</span></a>
+				</li>
+				<li class="goods-item-2 item-5">
+					<h2>Доставка</h2>
+					<a class="goods-btn" href="#"><span>Бесплатно</span></a>
+				</li>
+			</ul>
+		</section>
+	</main>
 	
 </body>
 </html>

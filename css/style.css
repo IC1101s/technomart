@@ -4,7 +4,7 @@ body {
 	
 	/*font-family: 'PT Sans Narrow', sans-serif;
 	font-family: 'PT Sans', sans-serif;*/
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "PT Sans", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -55,6 +55,7 @@ input[type="radio"].visually-hidden {
 
 .header {
 	width: 100%;
+	margin-bottom: 60px;
 
 	background-color: #f3f7f8;
 }
@@ -381,6 +382,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
+	font-style: normal;
 
 	color: #32425c;
 }
@@ -397,7 +399,10 @@ input[type="radio"].visually-hidden {
 }
 
 .header-btn-login {
+	display: inline-block;
 	padding: 11px 25px 11px 48px;
+
+	text-align: center;
 
 	font-family: "Cuprum", sans-serif;
 	font-size: 21px;
@@ -441,6 +446,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-btn-registration {
+	display: inline-block;
 	padding: 11px 24px;
 
 	font-family: "Cuprum", sans-serif;
@@ -519,4 +525,329 @@ input[type="radio"].visually-hidden {
 	transition-property: opacity;
 	transition-duration: 0.05s;
 	transition-timing-function: linear;
+}
+
+/* Goods ================================== */
+
+.goods-1 {
+	margin-bottom: 20px;
+}
+
+.goods-inner {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.goods-item {
+	width: 300px;
+	padding: 23px 0;
+}
+
+.item-1 {
+	background-color: #ffbf47; 
+
+	background-image: 
+		url("../img/goods/icon-1.svg"),
+		url("../img/goods/new.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: 213px 31px, right top;
+}
+
+.item-2 {
+	background-color: #3bbce3; 
+
+	background-image: url("../img/goods/icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 197px 33px;
+}
+
+.item-3 {
+	background-color: #dc91d8; 
+
+	background-image: url("../img/goods/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 191px 31px;
+}
+
+.goods-item h2 {
+	margin: 0;
+	margin-left: 23px;
+	margin-bottom: 13px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.goods-btn {
+	display: inline-block;
+	width: 135px;
+	margin-left: 25px;
+	padding: 5px 0;
+	text-align: center;
+
+	border-radius: 3px;
+
+	background-color: #000000;
+	opacity: 0.1;
+
+	transition-property: opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+}
+
+.goods-btn:hover,
+.goods-btn:focus {
+	opacity: 0.2;
+}
+
+.goods-btn:active {
+	opacity: 0.3;
+}
+
+.goods-btn span {
+	font-family: "Cuprum", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	opacity: 1;
+}
+
+/* Sliders-and-Goods ================================== */
+
+.sliders-and-goods {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.sliders-and-goods input[type="radio"] {
+	display: none;
+}
+
+.sliders-controls {
+	position: absolute;
+	left: 32%;
+	bottom: 36px;
+	z-index: 100;
+
+	width: 34px;
+	height: 12px;
+
+	text-align: center;
+	font-size: 0;
+
+	transform: translateX(-32%);
+}
+
+.sliders-controls label {
+	position: relative;
+
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 50%;
+
+	cursor: pointer;
+	background-color: #ffffff;
+}
+
+.sliders-controls label:last-child {
+	margin-right: 0px;
+}
+
+.sliders-controls label::after {
+	content: "";
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+
+	width: 6px;
+	height: 6px;
+	margin: -3px;
+
+	background-color: #ee3643;
+	border-radius: 50%;
+
+	display: none;
+}
+
+/* ========== sliders ========== */
+
+.sliders {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.sliders img {
+	position: absolute;
+	z-index: -1;
+
+	width: 620px; 
+	height: 266px;
+}
+
+.slider-item {
+ 	display: none;
+}
+
+.slider-item h3 {
+	margin: 0;
+	margin-bottom: 3px;
+	padding-left: 24px;
+	padding-top: 27px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.slider-item p {
+	margin: 0;
+	margin-bottom: 115px;
+	padding-left: 25px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #ffffff;
+}
+
+.slider-item:first-child p {
+	font-family: "PT Sans", sans-serif;
+}
+
+.sleder-btn {
+	display: inline-block;
+	margin-left: 25px;
+	padding: 12px 0px 11px;
+	width: 195px;
+
+	text-align: center;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	border-radius: 3px;
+
+	color: #ffffff;
+	background-color: #ee3643;
+
+	transition-property: background-color;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+}
+
+.sleder-btn:hover,
+.sleder-btn:focus {
+	background-color: #ca2c37;
+}
+
+.sleder-btn:active {
+	background-color: #ba2732;
+}
+
+/*.sliders-item::before {
+	content: "";
+
+	width: 22px;
+	height: 40px;
+
+	background-image: url("../img/sliders/icon-left.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}*/
+
+.slider-item:first-child {
+	display: none;
+}
+
+#btn-1:checked ~ .sliders-controls label[for="btn-1"]::after,
+#btn-2:checked ~ .sliders-controls label[for="btn-2"]::after {
+	display: block;
+}
+
+#btn-1:checked ~ .sliders .slider-item:nth-child(1) {
+	display: block;
+}
+
+#btn-2:checked ~ .sliders .slider-item:nth-child(2) {
+	display: block;
+}
+
+/* ========== goods-2 ========== */
+
+.goods-2 {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.goods-item-2 {
+	width: 300px;
+	padding: 23px 0;
+
+	margin-bottom: 20px;
+}
+
+.goods-item-2:last-child {
+	margin-bottom: 0;
+}
+
+.goods-item-2 h2 {
+	margin: 0;
+	margin-left: 23px;
+	margin-bottom: 13px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.item-4 {
+	background-color: #8ed78f; 
+
+	background-image: url("../img/goods/icon-4.svg");
+	background-repeat: no-repeat;
+	background-position: 196px 26px;
+}
+
+.item-5 {
+	background-color: #ffc047; 
+
+	background-image: url("../img/goods/icon-5.svg");
+	background-repeat: no-repeat;
+	background-position: 191px 32px;
 }
