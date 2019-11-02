@@ -1005,6 +1005,11 @@ input[type="radio"].visually-hidden {
 	margin-right: 0;
 }
 
+.popular-item:hover,
+.popular-item:focus {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
 /* ========== popular-img ========== */
 
 .popular-img {
@@ -1042,6 +1047,10 @@ input[type="radio"].visually-hidden {
 .popular-item:nth-child(4) .popular-images {
 	width: 127px; 
 	height: 112px;
+}
+
+.popular-item:hover .popular-images {
+	opacity: 0;
 }
 
 /* ========== popular-content ========== */
@@ -1089,9 +1098,12 @@ input[type="radio"].visually-hidden {
 .popular-price {
 	display: block;
 
-	width: 141px;
+	width: 103px;
+
 	padding: 9px 0;
+	padding-left: 8px;
 	margin-bottom: 20px;
+	margin-right: 12px;
 
 	font-size: 17px;
 	line-height: 18px;
@@ -1100,12 +1112,26 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	text-align: center;
 
-	border-radius: 3px;
+	border-radius: 1px;
 
 	color: #ffffff;
 	background-color: #ee3643;
 
 	cursor: default;
+}
+
+.popular-price::before {
+	content: "";
+
+	position: absolute;
+	bottom: 20px;
+	right: 42px;
+	z-index: 1;
+
+	border: 18px solid #ee3643;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
 }
 
 /* ========== popular-purchase ========== */
@@ -1196,14 +1222,6 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
-.popular-item:hover {
-	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-}
-
-.popular-item:hover .popular-images {
-	opacity: 0;
-}
-
 /* Manufacturer ================================== */
 
 .manufacturer {
@@ -1281,4 +1299,39 @@ input[type="radio"].visually-hidden {
 
 .manufacturer-item:active img {
 	opacity: 0.3;
+}
+
+/* Services ================================== */
+
+.services-background {
+	background-color: #f4f8f9;
+}
+
+.services {
+	margin-bottom: 75px;
+}
+
+.services-title {
+	margin: 0;
+	padding-top: 64px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.services-text {
+	font-family: "Cuprum", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.services-button {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
 }
