@@ -1335,3 +1335,128 @@ input[type="radio"].visually-hidden {
 
 	list-style: none;
 }
+
+.services-item {
+	display: none;
+}
+
+.services-item:first-child {
+	display: block;
+}
+
+/* Index-Columns ================================== */
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 85px;
+}
+
+/* Company ================================== */
+
+.company {
+	width: 540px;
+}
+
+.company-title {
+	margin-top: 0;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.company-text {
+	margin-bottom: 30px;
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.company-text:last-of-type {
+	margin-bottom: 20px;
+}
+
+.company-advantage {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.company-advantage-item {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 36px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.company-advantage-item:last-child {
+	margin-bottom: 35px;
+}
+
+.company-advantage-item::before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	transform: translate(0, -50%);
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #ee3643;
+}
+
+.company-btn {
+	width: 220px;
+	margin: 0;
+}
+
+/* Contacts ================================== */
+
+.contacts {
+	width: 300px;
+}
+
+.contacts-title {
+	margin-top: 0;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.contacts-text {
+	margin-bottom: 35px;
+
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.map-img {
+	margin-bottom: 30px;
+	
+	width: 300px;
+	height: 158px;
+}
+
+.contacts-btn {
+	width: 300px;
+	margin: 0;
+}
