@@ -536,16 +536,20 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.header-bottom-flex a {
-	display: inline-block;
-	padding: 24px 31px 19px 31px;
+.header-bottom-flex li {
+	flex-grow: 1;
+}
 
+.header-bottom-flex a {
+	display: block;
+	padding: 24px 31px 19px 31px;
 
 	font-size: 17px;
 	line-height: 17px;
 	font-weight: 400;
 
 	color: #ffffff;
+	text-align: center;
 
 	transition-property: color, background-color;
 	transition-duration: 0.1s;
@@ -1278,7 +1282,6 @@ input[type="radio"].visually-hidden {
 
 /* Services ================================== */
 
-
 .services {
 	margin-bottom: 75px;
 	background-color: #f4f8f9;
@@ -1286,35 +1289,132 @@ input[type="radio"].visually-hidden {
 
 .services-title {
 	margin: 0;
+	margin-bottom: 30px;
 	padding-top: 64px;
 
 	font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
+
+	color: #000000;
 	text-transform: uppercase;
 }
 
 .services-text {
-	font-family: "Cuprum", sans-serif;
+	margin: 0;
+	margin-bottom: 70px;
+
+	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
+
+	color: #000000;
+}
+
+.services-inner {
+	display: flex;
+	justify-content: space-between;
 }
 
 .services-button {
+	width: 250px;
+	position: relative;
+
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
 
+.services-button:after {
+	content: "";
+
+	width: 10px;
+	height: 272px;
+	
+	position: absolute;
+	top: -40px;
+	right: 0;
+	z-index: 1;
+
+	background-image: url("../img/services/shadow.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.btn-services {
+	width: 100%;
+	padding: 15px 0 15px 23px;
+	text-align: left;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
+
+	box-shadow: inset 0 -1px 0 #4d637b;
+	background-color: #32425c;
+	color: #ffffff;
+
+	border: none;
+	cursor: pointer;
+
+	transition-property: background-color;
+	transition-duration: 0.08s;
+	transition-timing-function: linear;
+}
+
+li:last-child .btn-services {
+	box-shadow: none;
+}
+
+.active .btn-services {
+	color: #32425c;
+	background-color: #ffffff;
+	cursor: default;
+}
+
+li:not(:first-of-type) .btn-services:hover {
+	background-color: #293449;
+}
+
+.services-content {
+	width: 620px;
+}
+
 .services-item {
+	width: 300px;
 	display: none;
 }
 
 .services-item:first-child {
 	display: block;
+}
+
+.services-content-title {
+	margin: 0;
+	margin-bottom: 28px;
+
+	font-family: "Cuprum", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.services-content-text {
+	margin: 0;
+
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #000000;
 }
 
 /* Index-Columns ================================== */
