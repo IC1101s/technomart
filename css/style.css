@@ -2416,13 +2416,17 @@ input[type="radio"].visually-hidden {
 
 /* Cotalog-Items ================================== */
 
+.cotalog-items {
+	width: 700px;
+}
+
 /* Sort ================================== */
 
 .sort {
 	display: flex;
 	align-items: center;
-	
-	width: 700px;
+
+	margin-bottom: 20px;
 	border-radius: 4px;
 
 	background-color: #f7f3ec;
@@ -2529,6 +2533,71 @@ input[type="radio"].visually-hidden {
 	border-left-color: transparent;
 	border-right-color: transparent;
 }
+
+/* Cotalog ================================== */
+
+.cotalog {
+	margin-bottom: 32px;
+}
+
+.cotalog-item {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 218px;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	border: 1px solid #eaeaea;
+
+	transition-property: box-shadow;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+
+.cotalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.cotalog-item:nth-child(3) {
+	background-image: url("../img/goods/new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.cotalog-item:nth-child(5) {
+	background-image: url("../img/goods/new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.cotalog-item:nth-child(7) {
+	background-image: url("../img/goods/new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.cotalog-item:hover,
+.cotalog-item:focus {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.cotalog-item:hover .popular-images {
+	opacity: 0;
+}
+
+.cotalog-item:hover .popular-purchase {
+	display: flex;
+	flex-direction: column; 
+
+	opacity: 1;
+}
+
+
 
 
 
