@@ -2097,6 +2097,15 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
+/* Cotalog-Columns ================================== */
+
+.cotalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Catalog-Filters ================================== */
+
 /* Filter ================================== */
 
 .filters {
@@ -2404,6 +2413,124 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 	cursor: default;
 }
+
+/* Cotalog-Items ================================== */
+
+/* Sort ================================== */
+
+.sort {
+	display: flex;
+	align-items: center;
+	
+	width: 700px;
+	border-radius: 4px;
+
+	background-color: #f7f3ec;
+}
+
+.sort-title {
+	margin: 0;
+	margin-left: 19px;
+	margin-right: 140px;
+	padding: 12px 0;
+
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sort-inner {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.sort-inner li {
+	margin-right: 68px;
+}
+
+.sort-inner li:last-child {
+	margin-right: 45px;
+}
+
+.sort-inner a {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-inner a:hover {
+	color: rgba(0, 0, 0, 1);
+	border-bottom-style: solid;
+}
+
+.sort-inner .active a {
+	color: #ee3643;
+	border-bottom: none;
+}
+
+.sort-direction {
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.sort-direction li {
+	margin-right: 21px;
+}
+
+.sort-direction li:last-child {
+	margin-right: 0;
+}
+
+.sort-direction a::before {
+	display: inline-block;
+	content: "";
+
+	border: 10px solid #c5c5c5;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+.sort-direction .arrow-up::before {
+	border-top-width: 0;
+}
+
+.sort-direction .arrow-down::before {
+	border-bottom-width: 0;
+}
+
+.sort-direction a:hover::before {
+	border-color: #000000;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+.sort-direction .active a::before {
+	border-color: #ee3643;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+
 
 
 

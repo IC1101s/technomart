@@ -108,77 +108,99 @@
 				<h2 class="cotalog-title">Перфораторы</h2>
 			</section>
 
-			<!-- Filter -->
-			<section class="filters">
-				<div class="filter-header">
-					<h3 class="filter">Фильтр:</h3>
-				</div>
-				<form action="https://echo.htmlacademy.ru" method="get">
-					<fieldset class="filter-price">
-						<legend class="filter-title">Цена:</legend>
-						<div class="filter-range">
-							<div class="filter-scale">
-								<div class="bar"></div>
-							</div>
-							<div class="scrolling scrolling-min"></div>
-							<div class="scrolling scrolling-max"></div>
+			<div class="cotalog-columns">
+				<div class="catalog-filters">
+					<!-- Filter -->
+					<section class="filters">
+						<div class="filter-header">
+							<h3 class="filter">Фильтр:</h3>
 						</div>
-						<div class="price">
-							<input type="text" name="price-min" value="0">
-							<div class="hyphen">—</div>
-							<input type="text" name="price-max" value="30000">
-						</div>
-					</fieldset>
-					
-					<fieldset class="filter-manufacturer">
-						<legend class="filter-title">Производители:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden input-checkbox" type="checkbox" name="bosch" 
-									id="bosch-filed" checked>
-								<label for="bosch-filed">Bosch</label>
-							</li>
-							<li>
-								<input class="visually-hidden input-checkbox" type="checkbox" name="интерскол" 
-									id="interskol-filed">
-								<label for="interskol-filed">Интерскол</label>
-							</li>
-							<li>
-								<input class="visually-hidden input-checkbox" type="checkbox" name="makita" 
-									id="makita-filed" checked>
-								<label for="makita-filed">Makita</label>
-							</li>
-							<li>
-								<input class="visually-hidden input-checkbox" type="checkbox" name="dewalt" 
-									id="dewalt-filed">
-								<label for="dewalt-filed">Dewalt</label>
-							</li>
-							<li>
-								<input class="visually-hidden input-checkbox" type="checkbox" name="hitachi" 
-									id="hitachi-filed">
-								<label for="hitachi-filed">Hitachi</label>
-							</li>
-						</ul>
-					</fieldset>
+						<form action="https://echo.htmlacademy.ru" method="get">
+							<fieldset class="filter-price">
+								<legend class="filter-title">Цена:</legend>
+								<div class="filter-range">
+									<div class="filter-scale">
+										<div class="bar"></div>
+									</div>
+									<div class="scrolling scrolling-min"></div>
+									<div class="scrolling scrolling-max"></div>
+								</div>
+								<div class="price">
+									<input type="text" name="price-min" value="0">
+									<div class="hyphen">—</div>
+									<input type="text" name="price-max" value="30000">
+								</div>
+							</fieldset>
+							
+							<fieldset class="filter-manufacturer">
+								<legend class="filter-title">Производители:</legend>
+								<ul>
+									<li>
+										<input class="visually-hidden input-checkbox" type="checkbox" name="bosch" 
+											id="bosch-filed" checked>
+										<label for="bosch-filed">Bosch</label>
+									</li>
+									<li>
+										<input class="visually-hidden input-checkbox" type="checkbox" name="интерскол" 
+											id="interskol-filed">
+										<label for="interskol-filed">Интерскол</label>
+									</li>
+									<li>
+										<input class="visually-hidden input-checkbox" type="checkbox" name="makita" 
+											id="makita-filed" checked>
+										<label for="makita-filed">Makita</label>
+									</li>
+									<li>
+										<input class="visually-hidden input-checkbox" type="checkbox" name="dewalt" 
+											id="dewalt-filed">
+										<label for="dewalt-filed">Dewalt</label>
+									</li>
+									<li>
+										<input class="visually-hidden input-checkbox" type="checkbox" name="hitachi" 
+											id="hitachi-filed">
+										<label for="hitachi-filed">Hitachi</label>
+									</li>
+								</ul>
+							</fieldset>
 
-					<fieldset class="filter-power">
-						<legend class="filter-title">Питание:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden input-radio" type="radio" name="power" 
-									id="accumulator-filed" value="accumulator" checked>
-								<label for="accumulator-filed">Аккумуляторные</label>
-							</li>
-							<li>
-								<input class="visually-hidden input-radio" type="radio" name="power" 
-									id="network-filed" value="network">
-								<label for="network-filed">Сетевые</label>
-							</li>
+							<fieldset class="filter-power">
+								<legend class="filter-title">Питание:</legend>
+								<ul>
+									<li>
+										<input class="visually-hidden input-radio" type="radio" name="power" 
+											id="accumulator-filed" value="accumulator" checked>
+										<label for="accumulator-filed">Аккумуляторные</label>
+									</li>
+									<li>
+										<input class="visually-hidden input-radio" type="radio" name="power" 
+											id="network-filed" value="network">
+										<label for="network-filed">Сетевые</label>
+									</li>
+								</ul>
+							</fieldset>
+							<button class="btn filter-btn" type="submit">Показать</button>
+						</form>
+					</section>
+				</div>
+				<div class="cotalog-items">
+					<section class="sort">
+						<h3 class="sort-title">Сортировка:</h3>
+						<ul class="sort-inner">
+							<li class="active"><a href="#">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По функционалу</a></li>
 						</ul>
-					</fieldset>
-					<button class="btn filter-btn" type="submit">Показать</button>
-				</form>
-			</section>
+						<ul class="sort-direction">
+							<li class="active"><a href="#" class="arrow-up">
+								<span class="visually-hidden">По возрастанию</span>
+							</a></li>
+							<li><a href="#" class="arrow-down">
+								<span class="visually-hidden">По убыванию</span>
+							</a></li>
+						</ul>
+					</section>
+				</div>
+			</div>
 		</div>
 	</main>
 
