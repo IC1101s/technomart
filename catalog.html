@@ -104,9 +104,9 @@
 			</section>
 
 			<!-- Cotalog-Header -->
-			<section class="cotalog-header">
+			<div class="cotalog-header">
 				<h2 class="cotalog-title">Перфораторы</h2>
-			</section>
+			</div>
 
 			<div class="cotalog-columns">
 				<div class="catalog-filters">
@@ -141,7 +141,7 @@
 										<label for="bosch-filed">Bosch</label>
 									</li>
 									<li>
-										<input class="visually-hidden input-checkbox" type="checkbox" name="интерскол" 
+										<input class="visually-hidden input-checkbox" type="checkbox" name="интерскол"
 											id="interskol-filed">
 										<label for="interskol-filed">Интерскол</label>
 									</li>
@@ -182,27 +182,28 @@
 						</form>
 					</section>
 				</div>
-				<div class="cotalog-items">
-					<!-- Sort -->
-					<section class="sort">
-						<h3 class="sort-title">Сортировка:</h3>
-						<ul class="sort-inner">
-							<li class="active"><a href="#">По цене</a></li>
-							<li><a href="#by-type">По типу</a></li>
-							<li><a href="#by-functionality">По функционалу</a></li>
-						</ul>
-						<ul class="sort-direction">
-							<li class="active"><a href="#increase" class="arrow-up">
-								<span class="visually-hidden">По возрастанию</span>
-							</a></li>
-							<li><a href="#decrease" class="arrow-down">
-								<span class="visually-hidden">По убыванию</span>
-							</a></li>
-						</ul>
-					</section>
 
+				<div class="cotalog-items">
 					<!-- Cotalog --> 
 					<section class="cotalog">	
+						<!-- Sort -->
+						<div class="sort">
+							<h3 class="sort-title">Сортировка:</h3>
+							<ul class="sort-inner">
+								<li class="active"><a href="#by-price">По цене</a></li>
+								<li><a href="#by-type">По типу</a></li>
+								<li><a href="#by-functionality">По функционалу</a></li>
+							</ul>
+							<ul class="sort-direction">
+								<li class="active"><a href="#increase" class="arrow-up">
+									<span class="visually-hidden">По возрастанию</span>
+								</a></li>
+								<li><a href="#decrease" class="arrow-down">
+									<span class="visually-hidden">По убыванию</span>
+								</a></li>
+							</ul>
+						</div>
+
 						<ul class="popular-cotalog">
 							<li class="cotalog-item">
 								<div class="popular-img">
@@ -358,10 +359,28 @@
 								</div>
 							</li>
 						</ul>
+
+						<!-- Pagination-List -->
+						<ul class="pagination-list">
+							<li class="active"><a href="#page-1">1</a></li>
+							<li><a href="#page-2">2</a></li>
+							<li><a href="#page-3">3</a></li>
+							<li class="following"><a href="#page-following">Следующая</a></li>
+						</ul>
 					</section>
 				</div>
 			</div>
 		</div>
+		
+		<!-- Information -->
+		<section class="information">
+			<div class="container">
+				<h2 class="information-title">Пара слов о перфораторах</h2>
+				<p class="information-text">
+					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+				</p>
+			</div>
+		</section>
 	</main>
 
 	<!-- Footer -->
@@ -377,7 +396,7 @@
 						<ul class="footer-site-navigation">
 							<li><a href="index.html">Главная</a></li>
 							<li><a href="#news">Новости</a></li>
-							<li><a href="#catalog">Каталог</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="#delivery">Доставка</a></li>
 							<li><a href="#contacts">Контакты</a></li>
 						</ul>
