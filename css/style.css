@@ -682,7 +682,7 @@ input[type="radio"].visually-hidden {
 	background-position: 191px 31px;
 }
 
-.goods-item h2 {
+.goods-item h3 {
 	max-width: 180px;
 	margin: 0;
 	margin-left: 23px;
@@ -918,179 +918,6 @@ input[type="radio"].visually-hidden {
 	font-family: "PT Sans", sans-serif;
 }
 
-/*.sliders-and-goods {
-	position: relative;
-
-	margin-bottom: 53px;
-
-	display: flex;
-	justify-content: space-between;
-}
-
-.sliders-and-goods input[type="radio"] {
-	display: none;
-}
-
-.sliders-controls {
-	position: absolute;
-	left: 32%;
-	bottom: 36px;
-	z-index: 100;
-
-	width: 34px;
-	height: 12px;
-
-	text-align: center;
-	font-size: 0;
-
-	transform: translateX(-32%);
-}
-
-.sliders-controls label {
-	position: relative;
-
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin-right: 10px;
-
-	border: 1px solid rgba(0, 0, 0, 0);
-	border-radius: 50%;
-
-	cursor: pointer;
-	background-color: #ffffff;
-}
-
-.sliders-controls label:last-child {
-	margin-right: 0px;
-}
-
-.sliders-controls label::after {
-	content: "";
-
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	z-index: 1;
-
-	width: 6px;
-	height: 6px;
-	margin: -3px;
-
-	background-color: #ee3643;
-	border-radius: 50%;
-
-	display: none;
-}
-
-.slider-item:first-child {
-	display: none;
-}
-
-#btn-1:checked ~ .sliders-controls label[for="btn-1"]::after,
-#btn-2:checked ~ .sliders-controls label[for="btn-2"]::after {
-	display: block;
-}
-
-#btn-1:checked ~ .sliders .slider-item:nth-child(1) {
-	display: block;
-}
-
-#btn-2:checked ~ .sliders .slider-item:nth-child(2) {
-	display: block;
-}
-
-.sliders {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-}
-
-.sliders img {
-	position: absolute;
-	z-index: -1;
-
-	width: 620px; 
-	height: 266px;
-}
-
-.slider-item {
- 	display: none;
-}
-
-.slider-item h3 {
-	margin: 0;
-	margin-bottom: 3px;
-	padding-left: 24px;
-	padding-top: 27px;
-
-	font-family: "Cuprum", sans-serif;
-	font-size: 36px;
-	line-height: 36px;
-	font-weight: 700;
-	text-transform: uppercase;
-
-	color: #ffffff;
-}
-
-.slider-item p {
-	margin: 0;
-	margin-bottom: 115px;
-	padding-left: 25px;
-
-	font-family: "Cuprum", sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 400;
-
-	color: #ffffff;
-}
-
-.slider-item:first-child p {
-	font-family: "PT Sans", sans-serif;
-}
-
-.slider-item::before {
-	content: "";
-	display: block;
-
-	position: absolute;
-	top: 50%;
-	left: 25px;
-	z-index: 1;
-
-	transform: translate(0, -50%);
-
-	width: 22px;
-	height: 40px;
-
-	background-image: url("../img/sliders/icon-left.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.slider-item::after {
-	content: "";
-	display: block;
-
-	position: absolute;
-	top: 50%;
-	right: 340px;
-	z-index: 1;
-
-	transform: translate(0, -50%);
-
-	width: 22px;
-	height: 40px;
-
-	background-image: url("../img/sliders/icon-right.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}*/
-
-/* ========== goods-2 ========== */
-
 .goods-2 {
 	margin: 0;
 	padding: 0;
@@ -1109,7 +936,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 0;
 }
 
-.goods-item-2 h2 {
+.goods-item-2 h3 {
 	max-width: 175px;
 	margin: 0;
 	margin-left: 23px;
@@ -2536,6 +2363,10 @@ input[type="radio"].visually-hidden {
 	border-left-color: transparent;
 	border-right-color: transparent;
 	cursor: default;
+}
+
+.sort-direction .active .arrow-up {
+ 	cursor: default;
 }
 
 /* Cotalog ================================== */
